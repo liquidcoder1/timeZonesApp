@@ -9,17 +9,16 @@
 import SwiftUI
 
 struct TimeZoneView: View {
-    var timeZone = TimeZone.data().first!
+  var timeZone: TimeZone
     
     var body: some View {
-        HStack{
-            
+        return HStack{
             VStack(alignment: .leading) {
-                Text(timeZone.Country).font(.system(size: 15, weight: Font.Weight.black))
-                Text(timeZone.City).foregroundColor(Color.gray)
+                Text(timeZone.area).font(.system(size: 15, weight: Font.Weight.black))
+                Text(timeZone.location).foregroundColor(Color.gray)
             }
             Spacer()
-            Text(timeZone.time).font(.system(size: 20, weight: Font.Weight.black))
+            Text(timeZone.utcOffset).font(.system(size: 20, weight: Font.Weight.black))
         }.frame(maxWidth: .infinity)
             .padding(30)
             .background(Color.white)
@@ -31,6 +30,6 @@ struct TimeZoneView: View {
 
 struct TimeZoneView_Previews: PreviewProvider {
     static var previews: some View {
-        TimeZoneView()
+        TimeZoneView(timeZone: TimeZone("", "", ""))
     }
 }
