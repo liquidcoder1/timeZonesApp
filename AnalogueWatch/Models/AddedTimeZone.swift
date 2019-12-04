@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct TimeZone: Identifiable {
+struct AddedTimeZone: Identifiable {
     let id: UUID
     let area: String
     let location: String
@@ -33,7 +33,5 @@ struct TimeZone: Identifiable {
         utcOffset = remoteTimeZone.utcOffset
         area = String(remoteTimeZone.timezone.split(separator: "/").first ?? "")
         location =  String(remoteTimeZone.timezone.split(separator: "/").last ?? "")
-        
     }
-    
 }

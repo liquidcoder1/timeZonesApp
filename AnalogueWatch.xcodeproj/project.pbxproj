@@ -13,12 +13,13 @@
 		5207E0142372073300B306B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5207E0132372073300B306B4 /* Assets.xcassets */; };
 		5207E0172372073300B306B4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5207E0162372073300B306B4 /* Preview Assets.xcassets */; };
 		5207E01A2372073300B306B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5207E0182372073300B306B4 /* LaunchScreen.storyboard */; };
+		5214322C2393CC8900398FBF /* DateExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5214322B2393CC8900398FBF /* DateExt.swift */; };
 		52233EF5238953920013446E /* RemoteTimeZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52233EF4238953920013446E /* RemoteTimeZone.swift */; };
 		52233EF92389563D0013446E /* TimeZoneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52233EF82389563D0013446E /* TimeZoneViewModel.swift */; };
 		524C65A4237D5A00006C37F4 /* NewTimeZoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524C65A3237D5A00006C37F4 /* NewTimeZoneView.swift */; };
 		524C65A6237D5A13006C37F4 /* AddedTimeZoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524C65A5237D5A13006C37F4 /* AddedTimeZoneView.swift */; };
 		5250254623787CCB00507CFC /* TopRoundShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5250254523787CCB00507CFC /* TopRoundShape.swift */; };
-		5250254923787FD900507CFC /* TimeZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5250254823787FD900507CFC /* TimeZone.swift */; };
+		5250254923787FD900507CFC /* AddedTimeZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5250254823787FD900507CFC /* AddedTimeZone.swift */; };
 		5250254B237881FE00507CFC /* TimeZoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5250254A237881FE00507CFC /* TimeZoneView.swift */; };
 		525307852387B3410021B095 /* AreaLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525307842387B3410021B095 /* AreaLocationView.swift */; };
 		525307872387C0950021B095 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525307862387C0950021B095 /* Location.swift */; };
@@ -28,12 +29,14 @@
 		5253079823887DAA0021B095 /* areaslocations.json in Resources */ = {isa = PBXBuildFile; fileRef = 5253079723887DAA0021B095 /* areaslocations.json */; };
 		5262BA0C238050CF00366BD8 /* WatchHand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5262BA09238050CF00366BD8 /* WatchHand.swift */; };
 		5262BA0D238050CF00366BD8 /* WatchFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5262BA0A238050CF00366BD8 /* WatchFrame.swift */; };
-		5262BA0E238050CF00366BD8 /* WatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5262BA0B238050CF00366BD8 /* WatchView.swift */; };
 		5263F6FD238BB2A5005F45E0 /* AreaLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5263F6FC238BB2A5005F45E0 /* AreaLocationViewModel.swift */; };
 		5263F6FF238C7184005F45E0 /* AddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5263F6FE238C7184005F45E0 /* AddButton.swift */; };
 		5263F701238C71AA005F45E0 /* BottomToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5263F700238C71AA005F45E0 /* BottomToolbar.swift */; };
 		5263F703238C71E0005F45E0 /* AddedTimeZonesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5263F702238C71E0005F45E0 /* AddedTimeZonesView.swift */; };
 		5263F705238C7274005F45E0 /* SavedTimeZonesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5263F704238C7274005F45E0 /* SavedTimeZonesView.swift */; };
+		5263F75923931ED1005F45E0 /* WatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5263F75823931ED1005F45E0 /* WatchView.swift */; };
+		5263F75C239327CC005F45E0 /* AnalogueWatch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5263F75A239327CC005F45E0 /* AnalogueWatch.xcdatamodeld */; };
+		5263F75E23939BCC005F45E0 /* SavedTimeZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5263F75D23939BCC005F45E0 /* SavedTimeZone.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,12 +48,13 @@
 		5207E0162372073300B306B4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5207E0192372073300B306B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5207E01B2372073300B306B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5214322B2393CC8900398FBF /* DateExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExt.swift; sourceTree = "<group>"; };
 		52233EF4238953920013446E /* RemoteTimeZone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteTimeZone.swift; sourceTree = "<group>"; };
 		52233EF82389563D0013446E /* TimeZoneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneViewModel.swift; sourceTree = "<group>"; };
 		524C65A3237D5A00006C37F4 /* NewTimeZoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTimeZoneView.swift; sourceTree = "<group>"; };
 		524C65A5237D5A13006C37F4 /* AddedTimeZoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddedTimeZoneView.swift; sourceTree = "<group>"; };
 		5250254523787CCB00507CFC /* TopRoundShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRoundShape.swift; sourceTree = "<group>"; };
-		5250254823787FD900507CFC /* TimeZone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZone.swift; sourceTree = "<group>"; };
+		5250254823787FD900507CFC /* AddedTimeZone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddedTimeZone.swift; sourceTree = "<group>"; };
 		5250254A237881FE00507CFC /* TimeZoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneView.swift; sourceTree = "<group>"; };
 		525307842387B3410021B095 /* AreaLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaLocationView.swift; sourceTree = "<group>"; };
 		525307862387C0950021B095 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
@@ -60,12 +64,14 @@
 		5253079723887DAA0021B095 /* areaslocations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = areaslocations.json; sourceTree = "<group>"; };
 		5262BA09238050CF00366BD8 /* WatchHand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchHand.swift; sourceTree = "<group>"; };
 		5262BA0A238050CF00366BD8 /* WatchFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchFrame.swift; sourceTree = "<group>"; };
-		5262BA0B238050CF00366BD8 /* WatchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WatchView.swift; path = ../../../../../Downloads/clock/WatchView.swift; sourceTree = "<group>"; };
 		5263F6FC238BB2A5005F45E0 /* AreaLocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaLocationViewModel.swift; sourceTree = "<group>"; };
 		5263F6FE238C7184005F45E0 /* AddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButton.swift; sourceTree = "<group>"; };
 		5263F700238C71AA005F45E0 /* BottomToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomToolbar.swift; sourceTree = "<group>"; };
 		5263F702238C71E0005F45E0 /* AddedTimeZonesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddedTimeZonesView.swift; sourceTree = "<group>"; };
 		5263F704238C7274005F45E0 /* SavedTimeZonesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedTimeZonesView.swift; sourceTree = "<group>"; };
+		5263F75823931ED1005F45E0 /* WatchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchView.swift; sourceTree = "<group>"; };
+		5263F75B239327CC005F45E0 /* AnalogueWatch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AnalogueWatch.xcdatamodel; sourceTree = "<group>"; };
+		5263F75D23939BCC005F45E0 /* SavedTimeZone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedTimeZone.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,7 @@
 		5207E00C2372073200B306B4 /* AnalogueWatch */ = {
 			isa = PBXGroup;
 			children = (
+				5214322A2393CC7100398FBF /* Extensions */,
 				5253079623887D750021B095 /* Data */,
 				525307912387CB860021B095 /* ViewModels */,
 				5253078A2387C9E60021B095 /* Networking */,
@@ -111,6 +118,7 @@
 				5207E0182372073300B306B4 /* LaunchScreen.storyboard */,
 				5207E01B2372073300B306B4 /* Info.plist */,
 				5207E0152372073300B306B4 /* Preview Content */,
+				5263F75A239327CC005F45E0 /* AnalogueWatch.xcdatamodeld */,
 			);
 			path = AnalogueWatch;
 			sourceTree = "<group>";
@@ -126,9 +134,9 @@
 		5207E02F2377473000B306B4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5263F75823931ED1005F45E0 /* WatchView.swift */,
 				5262BA0A238050CF00366BD8 /* WatchFrame.swift */,
 				5262BA09238050CF00366BD8 /* WatchHand.swift */,
-				5262BA0B238050CF00366BD8 /* WatchView.swift */,
 				5250254A237881FE00507CFC /* TimeZoneView.swift */,
 				524C65A3237D5A00006C37F4 /* NewTimeZoneView.swift */,
 				524C65A5237D5A13006C37F4 /* AddedTimeZoneView.swift */,
@@ -139,6 +147,14 @@
 				5263F704238C7274005F45E0 /* SavedTimeZonesView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		5214322A2393CC7100398FBF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5214322B2393CC8900398FBF /* DateExt.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		5250254423787CAA00507CFC /* Shapes */ = {
@@ -152,9 +168,10 @@
 		5250254723787FC800507CFC /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				5250254823787FD900507CFC /* TimeZone.swift */,
+				5250254823787FD900507CFC /* AddedTimeZone.swift */,
 				525307862387C0950021B095 /* Location.swift */,
 				52233EF4238953920013446E /* RemoteTimeZone.swift */,
+				5263F75D23939BCC005F45E0 /* SavedTimeZone.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -259,7 +276,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				524C65A4237D5A00006C37F4 /* NewTimeZoneView.swift in Sources */,
+				5214322C2393CC8900398FBF /* DateExt.swift in Sources */,
 				525307852387B3410021B095 /* AreaLocationView.swift in Sources */,
+				5263F75E23939BCC005F45E0 /* SavedTimeZone.swift in Sources */,
 				525307902387CA5A0021B095 /* DataProvider.swift in Sources */,
 				52233EF92389563D0013446E /* TimeZoneViewModel.swift in Sources */,
 				5253078E2387CA280021B095 /* Parser.swift in Sources */,
@@ -268,7 +287,7 @@
 				5253078C2387C9FE0021B095 /* WebService.swift in Sources */,
 				524C65A6237D5A13006C37F4 /* AddedTimeZoneView.swift in Sources */,
 				5263F6FD238BB2A5005F45E0 /* AreaLocationViewModel.swift in Sources */,
-				5250254923787FD900507CFC /* TimeZone.swift in Sources */,
+				5250254923787FD900507CFC /* AddedTimeZone.swift in Sources */,
 				5263F703238C71E0005F45E0 /* AddedTimeZonesView.swift in Sources */,
 				525307872387C0950021B095 /* Location.swift in Sources */,
 				5250254623787CCB00507CFC /* TopRoundShape.swift in Sources */,
@@ -276,9 +295,10 @@
 				5207E0102372073200B306B4 /* SceneDelegate.swift in Sources */,
 				5263F6FF238C7184005F45E0 /* AddButton.swift in Sources */,
 				5250254B237881FE00507CFC /* TimeZoneView.swift in Sources */,
-				5262BA0E238050CF00366BD8 /* WatchView.swift in Sources */,
 				5262BA0D238050CF00366BD8 /* WatchFrame.swift in Sources */,
+				5263F75923931ED1005F45E0 /* WatchView.swift in Sources */,
 				5262BA0C238050CF00366BD8 /* WatchHand.swift in Sources */,
+				5263F75C239327CC005F45E0 /* AnalogueWatch.xcdatamodeld in Sources */,
 				5263F701238C71AA005F45E0 /* BottomToolbar.swift in Sources */,
 				5207E0122372073200B306B4 /* ContentView.swift in Sources */,
 			);
@@ -472,6 +492,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5263F75A239327CC005F45E0 /* AnalogueWatch.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5263F75B239327CC005F45E0 /* AnalogueWatch.xcdatamodel */,
+			);
+			currentVersion = 5263F75B239327CC005F45E0 /* AnalogueWatch.xcdatamodel */;
+			path = AnalogueWatch.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5207E0022372073200B306B4 /* Project object */;
 }

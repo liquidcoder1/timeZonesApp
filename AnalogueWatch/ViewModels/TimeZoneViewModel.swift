@@ -10,7 +10,7 @@ import Foundation
 
 struct TimeZoneViewModel {
         
-   static func getTimeZone(for country: String, completion: @escaping((_ timezone: TimeZone)->())) {
+   static func getTimeZone(for country: String, completion: @escaping((_ timezone: AddedTimeZone)->())) {
         let url = "https://worldtimeapi.org/api/timezone/\(country).json"
         
         let webService = WebService(url: url)
@@ -19,7 +19,7 @@ struct TimeZoneViewModel {
             switch result{
             case .success(let response):
                 DispatchQueue.main.async {
-                    completion(TimeZone(from: response))
+                    completion(AddedTimeZone(from: response))
                 }
                 
             case .failure(let error):

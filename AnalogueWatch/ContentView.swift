@@ -11,8 +11,8 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var isExpanded: Bool  = false
-    @State private var areas = [Location]()
-    @State private var timezones = [TimeZone]()
+    @State private var timezones = [AddedTimeZone]()
+
     
     private let headerHeight: CGFloat = 100
     
@@ -29,7 +29,7 @@ struct ContentView: View {
                 Header().transition(.move(edge: .leading))
             }
             
-            if !isExpanded{
+            if !isExpanded {
                 WatchView(diameter: 170).transition(.scale)
             }
 
@@ -38,7 +38,7 @@ struct ContentView: View {
             }
 
             if !isExpanded{
-                SavedTimeZones(timezones:  self.$timezones).transition(.move(edge: .leading))
+                SavedTimeZones().transition(.move(edge: .leading))
             }
 
             if isExpanded{
@@ -74,15 +74,8 @@ struct Header: View {
 
     var body: some View {
         VStack{
-            HStack{
-                Spacer()
-                Image(systemName: "person.crop.circle")
-                    .resizable()
-                    .frame(width: 30, height: 30)
-                    .padding(.horizontal)
-            }
-            Text("Burundi")
-            Text("Sun, 10 Nov 2019")
+            Text("Coordinated Universal Time (UTC)").font(.system(size: 20)).bold()
+            Text("\(Date().formatted)")
         }.frame(height: self.headerHeight)
     }
 }

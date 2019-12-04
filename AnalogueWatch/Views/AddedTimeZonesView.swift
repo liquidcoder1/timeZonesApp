@@ -11,7 +11,7 @@ import SwiftUI
 
 struct AddedTimeZones: View {
     var headerHeight: CGFloat = 100
-    @Binding var timezones: [TimeZone]
+    @Binding var timezones: [AddedTimeZone]
     
     var body: some View {
         ScrollView( .horizontal, showsIndicators: false) {

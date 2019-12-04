@@ -11,7 +11,8 @@ import SwiftUI
 struct AreaLocationView: View {
     
     @ObservedObject private var areaLocationModel = AreaLocationViewModel()
-    @Binding var timezones: [TimeZone]
+    @Environment(\.managedObjectContext) var managedObjectContext
+    @Binding var timezones: [AddedTimeZone]
     @State var isLoading = false
     
     var body: some View {
@@ -41,6 +42,15 @@ struct AreaLocationView: View {
                                     self.isLoading = true
                                         TimeZoneViewModel.getTimeZone(for: "\(selectedLocation.area)/\(selectedLocation.name)", completion: { timeZone in
                                             self.timezones.append(timeZone)
+                                            
+                                            // Core data
+                                            let newTimeZone = SavedTimeZone(context: self.managedObjectContext)
+                                            newTimeZone.createdAt = Date()
+                                            newTimeZone.id = timeZone.id
+                                            newTimeZone.area = timeZone.area
+                                            newTimeZone.location = timeZone.location
+                                            newTimeZone.utcOffset = timeZone.utcOffset
+                                            try? self.managedObjectContext.save()
                                             self.isLoading = false
                                         })
                                 }) { deselectedLocation in

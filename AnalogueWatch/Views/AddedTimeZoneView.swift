@@ -10,7 +10,7 @@
 import SwiftUI
 
 struct AddedTimeZoneView: View {
-   var timeZone = TimeZone()
+   var timeZone = AddedTimeZone()
     
     var body: some View {
         VStack(alignment: .leading) {

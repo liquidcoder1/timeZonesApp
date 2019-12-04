@@ -11,12 +11,18 @@ import SwiftUI
 
 
 struct SavedTimeZones: View {
-    @Binding var timezones: [TimeZone]
+    
+    @FetchRequest(
+          entity: SavedTimeZone.entity(),
+          sortDescriptors: [
+              NSSortDescriptor(keyPath: \SavedTimeZone.createdAt, ascending: true),
+          ]
+      ) var timezones: FetchedResults<SavedTimeZone>
 
     var body: some View {
        return ScrollView( .vertical, showsIndicators: false) {
         VStack(spacing: 20) {
-            ForEach(timezones.reversed()){ timeZone in
+            ForEach(timezones){ timeZone in
                     TimeZoneView(timeZone: timeZone)
                 }
             }
